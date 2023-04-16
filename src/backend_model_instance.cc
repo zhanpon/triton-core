@@ -243,7 +243,7 @@ TritonModelInstance::CreateInstances(
             std::string("instance_group kind ") +
                 ModelInstanceGroup_Kind_Name(group.kind()) + " not supported");
       }
-      for (const auto is : instance_setting) {
+      for (const auto &is : instance_setting) {
         const auto& kind = std::get<1>(is);
         const auto& id = std::get<2>(is);
 
